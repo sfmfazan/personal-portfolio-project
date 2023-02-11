@@ -19,6 +19,8 @@ nav {
 .nav-link {
   color: white !important;
   border: 1px solid transparent;
+  text-shadow: 0 0 10px rgba(255, 125, 0, 1), 0 0 20px rgba(255, 175, 0, 0.8),
+    0 0 30px rgba(255, 225, 0, 0.5);
 }
 
 .nav-link:hover {
@@ -52,6 +54,7 @@ section {
   font-size: 100px;
   opacity: 0;
   animation: text 3s ease-in-out;
+
   cursor: pointer;
 }
 #home p:nth-child(1) {
@@ -65,6 +68,9 @@ section {
 }
 #home p:nth-child(4) {
   animation-delay: 9s;
+}
+#home p:nth-child(5) {
+  animation-delay: 12s;
 }
 #home span {
   color: aqua;
@@ -83,6 +89,9 @@ section {
     font-size: 30px;
     margin-right: 40px;
   }
+  .nav-link:hover {
+    border-bottom: transparent;
+  }
 }
 
 /*About section*/
@@ -91,7 +100,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: lightgray;
   color: #00171f;
   cursor: pointer;
 }
@@ -101,10 +110,13 @@ section {
   text-shadow: 3px 3px 2px rgb(30, 9, 9);
   color: #495057;
 }
+.content h1:hover {
+  text-shadow: 3px 3px 2px rgba(128, 0, 0, 1);
+}
 .circle {
   width: 400px;
   min-height: 400px;
-  background-color: bisque;
+  background-color: rgb(105, 101, 101);
   border-radius: 50%;
   position: relative;
   box-shadow: rgba(6, 6, 26, 0.25) 0px 50px 100px -20px,
@@ -147,18 +159,42 @@ section {
 .circle .content {
   opacity: 0;
 }
+.cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: rgb(105, 101, 101);
+  box-shadow: rgba(6, 6, 26, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(0, 2, 4, 0.35) 0px -2px 6px 0px inset;
+  color: #00171f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  width: 350px;
+}
+.cv:hover {
+  text-shadow: 3px 3px 2px rgb(30, 9, 9);
+}
 
 @media screen and (max-width: 576px) {
   .circle {
     width: 400px;
     min-height: 400px;
-    background: darkmagenta;
+    background-color: rgb(105, 101, 101);
+
     border-radius: 50%;
     position: relative;
     box-shadow: 0px 5px 12px gray;
     margin-bottom: 20%;
     margin-top: 5%;
     transition: 1s;
+  }
+  .cv {
+    width: 280px;
   }
   circle:hover img {
     position: absolute;
@@ -175,7 +211,7 @@ section {
 
   .circle .content {
     opacity: 0;
-    color: white;
+    color: #00171f;
     font-size: 11px;
   }
   .circle:hover .content {
@@ -196,7 +232,7 @@ section {
 /*Skill section*/
 
 #skills {
-  background-color: aquamarine;
+  background-color: rgb(123, 121, 121);
 }
 #skills .container {
   margin-top: 10%;
@@ -204,7 +240,13 @@ section {
 }
 label {
   font-size: 20px;
+  text-shadow: 1px 1px 2px aqua;
 }
+.text-center {
+  color: #495057;
+  text-shadow: 1px 1px 2px aqua;
+}
+
 .progress {
   height: 30px !important;
   cursor: pointer;
@@ -219,14 +261,14 @@ label {
   opacity: 0.7;
 }
 
-/*Project section*/
+/*Experience section*/
 
-#project {
+#experience {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 3%;
-  background-color: darkkhaki;
+  background-color: lightgray;
 }
 
 .carousel {
@@ -253,14 +295,19 @@ iframe {
   }
 }
 
-/*Price section*/
+/*Project section*/
 
-#pricing {
-  padding-top: 15%;
-  background-color: darkturquoise;
+#project {
+  padding-top: 5%;
+  background-color: rgb(123, 121, 121);
+}
+
+.btn {
+  background-color: #6c757d;
 }
 .card {
   cursor: pointer;
+  margin: 8px;
 
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
@@ -277,7 +324,7 @@ iframe {
 
 #contact {
   padding-top: 7%;
-  background-color: #fff;
+  background-color: lightgray;
 }
 #contact iframe {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -320,5 +367,7 @@ iframe {
 @media (max-width: 576px) {
   .fa {
     font-size: 18px;
+
+    color: gray;
   }
 }
