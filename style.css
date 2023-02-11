@@ -25,6 +25,7 @@ nav {
 
 .nav-link:hover {
   border-bottom: 2px solid #6c757d;
+  font-style: italic;
 }
 
 section {
@@ -93,6 +94,12 @@ section {
     border-bottom: transparent;
   }
 }
+@media screen and (max-width: 768px) {
+  #home p {
+    font-size: 70px;
+    margin-right: 40px;
+  }
+}
 
 /*About section*/
 
@@ -109,9 +116,12 @@ section {
   font-weight: bold;
   text-shadow: 3px 3px 2px rgb(30, 9, 9);
   color: #495057;
+  transition: 1s;
 }
 .content h1:hover {
-  text-shadow: 3px 3px 2px rgba(128, 0, 0, 1);
+  text-shadow: 3px 3px 2px rgb(67, 180, 195);
+  transition: 1s;
+  font-style: italic;
 }
 .circle {
   width: 400px;
@@ -123,7 +133,7 @@ section {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(0, 2, 4, 0.35) 0px -2px 6px 0px inset;
   margin-bottom: 20%;
-  margin-top: 5%;
+  margin-top: 7%;
   transition: 1s;
 }
 .circle img {
@@ -162,22 +172,26 @@ section {
 .cv {
   display: flex;
   align-items: center;
+  text-shadow: 3px 3px 2px rgb(30, 9, 9);
   justify-content: center;
   padding: 10px 20px;
   background-color: rgb(105, 101, 101);
   box-shadow: rgba(6, 6, 26, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(0, 2, 4, 0.35) 0px -2px 6px 0px inset;
-  color: #00171f;
+  color: #495057;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 25px;
   text-align: center;
   width: 350px;
+  height: 200px;
+  transition: 1s;
 }
 .cv:hover {
-  text-shadow: 3px 3px 2px rgb(30, 9, 9);
+  text-shadow: 3px 3px 2px rgb(67, 180, 195);
+  transition: 1s;
 }
 
 @media screen and (max-width: 576px) {
@@ -195,6 +209,7 @@ section {
   }
   .cv {
     width: 280px;
+    height: 70px;
   }
   circle:hover img {
     position: absolute;
@@ -229,6 +244,7 @@ section {
     text-shadow: 3px 3px 2px rgba(128, 0, 0, 1);
   }
 }
+
 /*Skill section*/
 
 #skills {
