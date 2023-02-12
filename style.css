@@ -5,6 +5,8 @@
   box-sizing: border-box;
   font-family: "Roboto Slab", serif;
 }
+
+/*Nav section*/
 nav {
   width: 100%;
   position: sticky !important;
@@ -259,8 +261,15 @@ label {
   text-shadow: 1px 1px 2px aqua;
 }
 .text-center {
-  color: #495057;
+  color: black;
   text-shadow: 1px 1px 2px aqua;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.text-center:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  font-style: italic;
 }
 
 .progress {
@@ -373,8 +382,8 @@ iframe {
 
 .social-icon {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: #fff;
   text-align: center;
@@ -398,6 +407,6 @@ iframe {
   .fa {
     font-size: 18px;
 
-    color: gray;
+    color: rgb(4, 192, 192);
   }
 }
