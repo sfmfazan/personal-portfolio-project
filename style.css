@@ -16,7 +16,7 @@ nav {
   z-index: 10;
 }
 .navbar-brand {
-  font-weight: 600px;
+  font-weight: bold;
 }
 .nav-link {
   color: white !important;
@@ -26,7 +26,7 @@ nav {
 }
 
 .nav-link:hover {
-  border-bottom: 2px solid #6c757d;
+  border-bottom: 2px solid aqua;
   font-style: italic;
 }
 
@@ -261,15 +261,9 @@ label {
   text-shadow: 1px 1px 2px aqua;
 }
 .text-center {
-  color: black;
+  color: rgb(42, 40, 40);
   text-shadow: 1px 1px 2px aqua;
   cursor: pointer;
-  transition: all 0.3s;
-}
-.text-center:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  font-style: italic;
 }
 
 .progress {
